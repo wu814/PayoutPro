@@ -1,7 +1,10 @@
 # TAMUhack2023
 first commit
-test
+<<<<<<< HEAD
+hello
 
-testing out commit and push
-daniels test
-whatsup
+
+guys i got it to work
+
+test
+this is daniel
