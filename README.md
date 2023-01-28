@@ -1,5 +1,10 @@
 # TAMUhack2023
 first commit
+<<<<<<< HEAD
 hello
-this is wu testing
-andrew test
+
+
+
+
+
+this is daniel
