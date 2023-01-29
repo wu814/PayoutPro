@@ -64,12 +64,12 @@ class MaxHeap {
       console.log(this.heap.map(i => i[0] + ":" + i[1]).join(" ")); 
     }
   
-    lossStr() {
+    print_loss() {
       let stri = this.heap.map(i => i[0] + " owes $" + i[1] + ".").join("<br>");
       return stri;
     }
   
-    gainStr() {
+    print_gain() {
       let stri = this.heap.map(i => i[0] + " earns $" + i[1] + ".").join("<br>");
       return stri;
     }
@@ -88,12 +88,7 @@ function rearrange(greater, less) {
     const loss = new MaxHeap();
     const gain = new MaxHeap();
   
-    // // let chipStr;
-    // // let buyStr;
-    // console.log("For each player, enter name, amount of chips, and total bought in seperated by space: ");
-    // const nameInput = document.getElementById(`nameInput${i}`);
-    // const chipInput = document.getElementById(`chipInput${i}`);
-    // const buyInput = document.getElementById(`buyInput${i}`);
+    
     
     const nameArray = ["p1name", "p2name", "p3name", "p4name", "p5name", "p6name", "p7name", "p8name", ];
     const chipsArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
@@ -129,7 +124,7 @@ function rearrange(greater, less) {
       }
     }
 
-    let summary = loss.lossStr() + "<br>" + "<br>" + gain.gainStr();
+    let summary = loss.print_loss() + "<br>" + "<br>" + gain.print_gain();
     //console.log(summary);
     document.getElementById("sum").innerHTML = summary;
 
