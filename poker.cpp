@@ -83,7 +83,6 @@ class MaxHeap {
   }
 };
 
-// 
 void rearrange(MaxHeap& greater, MaxHeap& less) {
     greater.insert(greater.get_max().first, greater.get_max().second - less.get_max().second);
     greater.extract_max();
@@ -114,7 +113,7 @@ int main() {
           exit(1);
         }
         double net = chips - buyIn;
-        if (name == "dick") {
+        if (name == "none") {
             net = 0;
         }
         if (net > 0) {
