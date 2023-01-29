@@ -94,8 +94,13 @@ span{
 }
 .summary h3{
     padding: 20px 0px;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
+}
+.summary p{
+    color: white;
+    font-size: 20px;
+
 }
 .result{
     display: inline-block;
@@ -112,10 +117,11 @@ span{
 }
 .result h3{
     padding: 20px 0px;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
 }
-.result div{
+.result p{
+    color: white;
     font-size: 20px;
 }
 footer{
