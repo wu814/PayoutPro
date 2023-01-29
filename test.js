@@ -16,7 +16,7 @@ class MaxHeap {
     }
   
     heapify_up(i) {
-      while (i > 0 && this.heap[this.parent(i)].second < this.heap[i].second) {
+      while (i > 0 && this.heap[this.parent(i)][1] < this.heap[i][1]) {
         [this.heap[this.parent(i)], this.heap[i]] = [this.heap[i], this.heap[this.parent(i)]];
         i = this.parent(i);
       }
@@ -27,8 +27,8 @@ class MaxHeap {
       let l = this.left(i);
       let r = this.right(i);
   
-      if (l < this.heap.length && this.heap[l].second > this.heap[max_index].second) max_index = l;
-      if (r < this.heap.length && this.heap[r].second > this.heap[max_index].second) max_index = r;
+      if (l < this.heap.length && this.heap[l][1] > this.heap[max_index][1]) max_index = l;
+      if (r < this.heap.length && this.heap[r][1] > this.heap[max_index][1]) max_index = r;
   
       if (i !== max_index) {
         [this.heap[i], this.heap[max_index]] = [this.heap[max_index], this.heap[i]];
@@ -60,25 +60,25 @@ class MaxHeap {
       return max;
     }
   
-    // print_heap() {
-    //   console.log(this.heap.map(i => i.first + ":" + i.second).join(" ")); hello
-    // }
+    print_heap() {
+      console.log(this.heap.map(i => i[0] + ":" + i[1]).join(" ")); hello
+    }
   
-    // print_loss() {
-    //   console.log(this.heap.map(i => i.first + " owes $" + i.second).join("\n"));
-    // }
+    print_loss() {
+      console.log(this.heap.map(i => i[0] + " owes $" + i[1]).join("\n"));
+    }
   
-    // print_gain() {
-    //   console.log(this.heap.map(i => i.first + " earns $" + i.second).join("\n"));
-    // }
+    print_gain() {
+      console.log(this.heap.map(i => i[0] + " earns $" + i[1]).join("\n"));
+    }
   }
 
 
 function rearrange(greater, less) {
-    greater.insert(greater.get_max().first, greater.get_max().second - less.get_max().second);
+    greater.insert(greater.get_max()[0], greater.get_max()[1] - less.get_max()[1]);
     greater.extract_max();
   
-    less.insert(less.get_max().first, 0);
+    less.insert(less.get_max()[0], 0);
     less.extract_max();
   }
 
@@ -100,9 +100,9 @@ function rearrange(greater, less) {
     // const chipsArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
     // const buyInArray = ["p1worth", "p2worth", "p3worth", "p4worth", "p5worth", "p6worth", "p7worth", "p8worth"];
     
-    const nameArray = ["dan", "bob", "jo", "bill", "eric", "andrew", "wu", "adin", ];
-    const chipsArray = ["10", "5", "10", "5", "10", "5", "10", "5"];
-    const buyInArray = ["5", "10", "5", "10", "5", "10", "5", "10"];
+    const nameArray = ["dan", "bob", "jo", "bill", "none", "none", "none", "none", ];
+    const chipsArray = ["12", "10", "0", "43", "10", "5", "10", "5"];
+    const buyInArray = ["25", "10", "30", "0", "5", "10", "5", "10"];
     
 
     // call to change each element
@@ -163,21 +163,21 @@ function rearrange(greater, less) {
       }
     }
   
-    //loss.printLoss();
+    loss.print_loss();
     console.log("\n");
-    //gain.printGain();
+    gain.print_gain();
     console.log("\n"); 
   
-    //while (gain.get_max().second !== 0 && loss.get_max().second !== 0) {
-      if ( gain.get_max().second < loss.get_max().second) {
-        console.log(`${loss.get_max().first} pays ${gain.get_max().first} $${gain.get_max().second}`);
+    while (gain.get_max()[1] !== 0 && loss.get_max()[1] !== 0) {
+      if ( gain.get_max()[1] < loss.get_max()[1]) {
+        console.log(`${loss.get_max()[0]} pays ${gain.get_max()[0]} $${gain.get_max()[1]}`);
         rearrange(loss, gain);
       } 
       else {
-        console.log(`${loss.get_max().first} pays ${ gain.get_max().first} $${loss.get_max().second}`);
+        console.log(`${loss.get_max()[0]} pays ${ gain.get_max()[0]} $${loss.get_max()[1]}`);
         rearrange( gain, loss);
       }
-    //}
+    }
   
     return 0;
   }
