@@ -86,62 +86,26 @@ function rearrange(greater, less) {
     const loss = new MaxHeap();
     const gain = new MaxHeap();
   
-    // let name;
     // // let chipStr;
     // // let buyStr;
-    // let chips;
-    // let buyIn;
     // console.log("For each player, enter name, amount of chips, and total bought in seperated by space: ");
     // const nameInput = document.getElementById(`nameInput${i}`);
     // const chipInput = document.getElementById(`chipInput${i}`);
     // const buyInput = document.getElementById(`buyInput${i}`);
     
-    // const nameArray = ["p1name", "p2name", "p3name", "p4name", "p5name", "p6name", "p7name", "p8name", ];
-    // const chipsArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
-    // const buyInArray = ["p1worth", "p2worth", "p3worth", "p4worth", "p5worth", "p6worth", "p7worth", "p8worth"];
+    const nameArray = ["p1name", "p2name", "p3name", "p4name", "p5name", "p6name", "p7name", "p8name", ];
+    const chipsArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
+    const buyInArray = ["p1worth", "p2worth", "p3worth", "p4worth", "p5worth", "p6worth", "p7worth", "p8worth"];
     
-    const nameArray = ["dan", "bob", "jo", "bill", "none", "none", "none", "none", ];
-    const chipsArray = ["12", "10", "0", "43", "10", "5", "10", "5"];
-    const buyInArray = ["25", "10", "30", "0", "5", "10", "5", "10"];
     
 
     // call to change each element
-    // for (let i = 0; i < 8; i++) {
-    //     nameArray[i] = document.getElementById(nameArray[i]).value;
-    //     chipsArray[i] = document.getElementById(chipsArray[i]).value;
-    //     buyInArray[i] = document.getElementById(buyInArray[i]).value;
-    // }
-    // let player1Name = document.getElementById("p1name").value;
-    // let player1Chips = document.getElementById("p1total").value;
-    // let player1BuyIn = document.getElementById("p1worth").value;
+    for (let i = 0; i < 8; i++) {
+        nameArray[i] = document.getElementById(nameArray[i]).value;
+        chipsArray[i] = document.getElementById(chipsArray[i]).value;
+        buyInArray[i] = document.getElementById(buyInArray[i]).value;
+    }
     
-    // let player2Name = document.getElementById("p2name").value;
-    // let player2Chips = document.getElementById("p2total").value;
-    // let player2BuyIn = document.getElementById("p2worth").value;
-    
-    // let player3Name = document.getElementById("p3name").value;
-    // let player3Chips = document.getElementById("p3total").value;
-    // let player3BuyIn = document.getElementById("p3worth").value;
-    
-    // let player4Name = document.getElementById("p4name").value;
-    // let player4Chips = document.getElementById("p4total").value;
-    // let player4BuyIn = document.getElementById("p4worth").value;
-    
-    // let player5Name = document.getElementById("p5name").value;
-    // let player5Chips = document.getElementById("p5total").value;
-    // let player5BuyIn = document.getElementById("p5worth").value;
-    
-    // let player6Name = document.getElementById("p6name").value;
-    // let player6Chips = document.getElementById("p6total").value;
-    // let player6BuyIn = document.getElementById("p6worth").value;
-    
-    // let player7Name = document.getElementById("p7name").value;
-    // let player7Chips = document.getElementById("p7total").value;
-    // let player7BuyIn = document.getElementById("p7worth").value;
-    
-    // let player8Name = document.getElementById("p8name").value;
-    // let player8Chips = document.getElementById("p8total").value;
-    // let player8BuyIn = document.getElementById("p8worth").value;
 
     for (let i = 0; i < 8; i++) {
     //   try {
