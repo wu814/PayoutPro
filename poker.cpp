@@ -114,7 +114,7 @@ int main() {
           exit(1);
         }
         double net = chips - buyIn;
-        if (name == "dick") {
+        if (name == "none") {
             net = 0;
         }
         if (net > 0) {
