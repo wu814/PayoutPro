@@ -61,7 +61,7 @@ class MaxHeap {
     }
   
     // print_heap() {
-    //   console.log(this.heap.map(i => i.first + ":" + i.second).join(" "));
+    //   console.log(this.heap.map(i => i.first + ":" + i.second).join(" ")); hello
     // }
   
     // print_loss() {
