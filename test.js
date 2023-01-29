@@ -106,7 +106,6 @@ function rearrange(greater, less) {
         chipsArray[i] = document.getElementById(chipsArray[i]).value;
         buyInArray[i] = document.getElementById(buyInArray[i]).value;
     }
-    
     // let player1Name = document.getElementById("p1name").value;
     // let player1Chips = document.getElementById("p1total").value;
     // let player1BuyIn = document.getElementById("p1worth").value;
