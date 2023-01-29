@@ -144,7 +144,7 @@ int main() {
             std::cout << loss.get_max().first << " pays " << gain.get_max().first << " $" << loss.get_max().second << '\n';
             rearrange(gain, loss);
         }
-        
+        // new comment
     }
 
     return 0;
