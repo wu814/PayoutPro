@@ -17,7 +17,7 @@ html{
 h1{
     padding: 12px;
     width: 490px;
-    margin: 10px 10px 20px 10px;
+    margin: 10px 10px 20px 30px;
     font-size: 60px;
     color:white;
     background-color: aqua;
@@ -28,10 +28,18 @@ hr{
     margin-bottom: 30px;
     height: 2px;
 }
-.info {
-    margin-left: 5px;
+.header {
+    margin-top: 40px;
+    margin-left: 45px;
     font-size: 20px;
     color: white;
+}
+
+.header ul li:nth-child(2){
+    margin-left: 135px;
+}
+.header ul li:last-child{
+    margin-left: 30px;
 }
 span{
     color: rgb(111, 200, 225);
@@ -39,7 +47,7 @@ span{
 .name{
     color: white;
     padding: 10px;
-    margin: 2px 25px;
+    margin: 2px 10px 2px 45px;
     border-radius: 7px;
     border: 2px solid rgb(255, 255, 255);
     background-color: aqua;
@@ -48,10 +56,13 @@ span{
 ::placeholder{
     color: rgb(139, 134, 134);
 }
+ul li{
+    display: inline;
+}
 .worth{
     color: white;
     padding: 10px;
-    margin: 2px 25px;
+    margin: 2px 10px;
     border-radius: 7px;
     border: 2px solid #f9004d;
     background-color: aqua;
@@ -60,7 +71,7 @@ span{
 .total{
     color: white;
     padding: 10px;
-    margin: 2px 25px;
+    margin: 2px 10px;
     border-radius: 7px;
     border: 2px solid #f9004d;
     background-color: aqua;
