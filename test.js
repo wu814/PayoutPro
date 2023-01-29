@@ -163,7 +163,7 @@ function rearrange(greater, less) {
     //gain.printGain();
     console.log("\n"); 
   
-    while (gain.get_max().second !== 0 && loss.get_max().second !== 0) {
+    //while (gain.get_max().second !== 0 && loss.get_max().second !== 0) {
       if ( gain.get_max().second < loss.get_max().second) {
         console.log(`${loss.get_max().first} pays ${gain.get_max().first} $${ gain.get_max().second}`);
         rearrange(loss, gain);
@@ -172,7 +172,7 @@ function rearrange(greater, less) {
         console.log(`${loss.get_max().first} pays ${ gain.get_max().first} $${loss.get_max().second}`);
         rearrange( gain, loss);
       }
-    }
+    //}
   
     return 0;
   }
