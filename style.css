@@ -38,10 +38,10 @@ hr{
     margin-right: 50px;
 }
 .header ul li:nth-child(2){
-    margin-left: 105px;
+    margin-left: 83px;
 }
 .header ul li:last-child{
-    margin-left: 65px;
+    margin-left: 40px;
 }
 span{
     color: rgb(111, 200, 225);
