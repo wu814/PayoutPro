@@ -37,6 +37,7 @@ span{
     color: rgb(111, 200, 225);
 }
 .name{
+    color: white;
     padding: 10px;
     margin: 2px 25px;
     border-radius: 7px;
@@ -48,6 +49,7 @@ span{
     color: rgb(139, 134, 134);
 }
 .worth{
+    color: white;
     padding: 10px;
     margin: 2px 25px;
     border-radius: 7px;
@@ -56,6 +58,7 @@ span{
     background-color: rgba(0, 0, 0, .6);
 }
 .total{
+    color: white;
     padding: 10px;
     margin: 2px 25px;
     border-radius: 7px;
