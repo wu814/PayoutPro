@@ -5,7 +5,7 @@
     box-sizing: border-box;   
 }
 html{
-    background: url(img/background.jpeg) no-repeat center center fixed; 
+    background: url(img/Hero.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -67,18 +67,18 @@ span{
     cursor: pointer;
 }
 .result{
-    display: flex;
-    justify-content: center;
-    height: 700px;
+    display: inline-block;
+    text-align: center;
+    height: 500px;
     width: 600px;
     background-color: rgb(254, 254, 254);
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 100px;
     border-radius: 50px;
     border: 5px solid rgb(111, 200, 225);
 }
 .result h3{
-    padding-top: 10px;
+    padding: 20px 0px;
     font-size: 30px;
 }
 .result div{
