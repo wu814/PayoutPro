@@ -11,7 +11,10 @@ The system uses a combination of C++ and JavaScript on the backend, and HTML and
 3. The system will display the transactions needed in a clear and concise format.
 
 ## Contributors
-This poker payout system was created by Andrew Lin, Eric McGonagle, Daniel Querrey, and William Wu.
+* Andrew Lin
+* Eric McGonagle
+* Daniel Querrey
+* William Wu
 
 ## License
 This poker payout system is open source and released under the MIT License.
