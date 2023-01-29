@@ -64,12 +64,12 @@ class MaxHeap {
       console.log(this.heap.map(i => i[0] + ":" + i[1]).join(" ")); 
     }
   
-    print_loss() {
+    lossStr() {
       let stri = this.heap.map(i => i[0] + " owes $" + i[1] + ".").join("<br>");
       return stri;
     }
   
-    print_gain() {
+    gainStr() {
       let stri = this.heap.map(i => i[0] + " earns $" + i[1] + ".").join("<br>");
       return stri;
     }
@@ -129,7 +129,7 @@ function rearrange(greater, less) {
       }
     }
 
-    let summary = loss.print_loss() + "<br>" + "<br>" + gain.print_gain();
+    let summary = loss.lossStr() + "<br>" + "<br>" + gain.gainStr();
     //console.log(summary);
     document.getElementById("sum").innerHTML = summary;
 
