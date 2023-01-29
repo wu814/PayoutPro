@@ -96,16 +96,21 @@ function rearrange(greater, less) {
     // const chipInput = document.getElementById(`chipInput${i}`);
     // const buyInput = document.getElementById(`buyInput${i}`);
     
-    const nameArray = ["p1name", "p2name", "p3name", "p4name", "p5name", "p6name", "p7name", "p8name", ];
-    const chipsArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
-    const buyInArray = ["p1worth", "p2worth", "p3worth", "p4worth", "p5worth", "p6worth", "p7worth", "p8worth"];
+    // const nameArray = ["p1name", "p2name", "p3name", "p4name", "p5name", "p6name", "p7name", "p8name", ];
+    // const chipsArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
+    // const buyInArray = ["p1worth", "p2worth", "p3worth", "p4worth", "p5worth", "p6worth", "p7worth", "p8worth"];
     
+    const nameArray = ["dan", "bob", "jo", "bill", "eric", "andrew", "wu", "adin", ];
+    const chipsArray = ["10", "5", "10", "5", "10", "5", "10", "5"];
+    const buyInArray = ["5", "10", "5", "10", "5", "10", "5", "10"];
+    
+
     // call to change each element
-    for (let i = 0; i < 8; i++) {
-        nameArray[i] = document.getElementById(nameArray[i]).value;
-        chipsArray[i] = document.getElementById(chipsArray[i]).value;
-        buyInArray[i] = document.getElementById(buyInArray[i]).value;
-    }
+    // for (let i = 0; i < 8; i++) {
+    //     nameArray[i] = document.getElementById(nameArray[i]).value;
+    //     chipsArray[i] = document.getElementById(chipsArray[i]).value;
+    //     buyInArray[i] = document.getElementById(buyInArray[i]).value;
+    // }
     // let player1Name = document.getElementById("p1name").value;
     // let player1Chips = document.getElementById("p1total").value;
     // let player1BuyIn = document.getElementById("p1worth").value;
@@ -146,7 +151,7 @@ function rearrange(greater, less) {
     //     console.log(`Invalid input: ${e.message}`);
     //     process.exit(1);
     //   }
-      let net = chipsArray[i] - buyInArray[i];
+      let net = parseFloat(chipsArray[i]) - parseFloat(buyInArray[i]);
       if (nameArray[i] === "none") {
         net = 0;
       }
@@ -165,7 +170,7 @@ function rearrange(greater, less) {
   
     //while (gain.get_max().second !== 0 && loss.get_max().second !== 0) {
       if ( gain.get_max().second < loss.get_max().second) {
-        console.log(`${loss.get_max().first} pays ${gain.get_max().first} $${ gain.get_max().second}`);
+        console.log(`${loss.get_max().first} pays ${gain.get_max().first} $${gain.get_max().second}`);
         rearrange(loss, gain);
       } 
       else {
