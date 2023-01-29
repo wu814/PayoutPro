@@ -15,7 +15,7 @@ html{
     display: flex;
 }
 h1{
-    margin: 15px 0px 15px 10px;
+    margin: 15px 0px 20px 10px;
     font-size: 60px;
     color:white;
 }
@@ -69,14 +69,30 @@ span{
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+.summary{
+    display: inline-block;
+    text-align: center;
+    height: 500px;
+    width: 300px;
+    background-color: rgb(254, 254, 254);
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 50px;
+    border: 5px solid rgb(111, 200, 225);
+}
+.summary h3{
+    padding: 20px 0px;
+    font-size: 30px;
+}
 .result{
     display: inline-block;
     text-align: center;
     height: 500px;
-    width: 600px;
+    width: 300px;
     background-color: rgb(254, 254, 254);
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 50px;
     border: 5px solid rgb(111, 200, 225);
 }
@@ -93,4 +109,5 @@ footer{
 }
 footer p{
     margin-top: 80px;
+    color: white;
 }
