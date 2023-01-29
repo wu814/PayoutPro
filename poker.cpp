@@ -132,7 +132,6 @@ int main() {
 
     std::cout << '\n';
 
-
     while (gain.get_max().second != 0 && loss.get_max().second != 0) {
         // if highest earner is less than biggest loser
         if (gain.get_max().second < loss.get_max().second) {
