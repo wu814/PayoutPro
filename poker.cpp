@@ -111,6 +111,7 @@ int main() {
         } 
         catch (const std::invalid_argument& e) {
           std::cout << "Invalid input: " << e.what() << std::endl;
+          exit(1);
         }
         double net = chips - buyIn;
         if (name == "dick") {
