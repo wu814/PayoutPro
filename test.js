@@ -60,17 +60,17 @@ class MaxHeap {
       return max;
     }
   
-    print_heap() {
-      console.log(this.heap.map(i => i.first + ":" + i.second).join(" "));
-    }
+    // print_heap() {
+    //   console.log(this.heap.map(i => i.first + ":" + i.second).join(" "));
+    // }
   
-    print_loss() {
-      console.log(this.heap.map(i => i.first + " owes $" + i.second).join("\n"));
-    }
+    // print_loss() {
+    //   console.log(this.heap.map(i => i.first + " owes $" + i.second).join("\n"));
+    // }
   
-    print_gain() {
-      console.log(this.heap.map(i => i.first + " earns $" + i.second).join("\n"));
-    }
+    // print_gain() {
+    //   console.log(this.heap.map(i => i.first + " earns $" + i.second).join("\n"));
+    // }
   }
 
 
@@ -158,18 +158,18 @@ function rearrange(greater, less) {
       }
     }
   
-    loss.printLoss();
+    //loss.printLoss();
     console.log("\n");
-    gain.printGain();
+    //gain.printGain();
     console.log("\n"); 
   
-    while (gain.getMax().second !== 0 && loss.getMax().second !== 0) {
-      if ( gain.getMax().second < loss.getMax().second) {
-        console.log(`${loss.getMax().first} pays ${gain.getMax().first} $${ gain.getMax().second}`);
+    while (gain.get_max().second !== 0 && loss.get_max().second !== 0) {
+      if ( gain.get_max().second < loss.get_max().second) {
+        console.log(`${loss.get_max().first} pays ${gain.get_max().first} $${ gain.get_max().second}`);
         rearrange(loss, gain);
       } 
       else {
-        console.log(`${loss.getMax().first} pays ${ gain.getMax().first} $${loss.getMax().second}`);
+        console.log(`${loss.get_max().first} pays ${ gain.get_max().first} $${loss.get_max().second}`);
         rearrange( gain, loss);
       }
     }
