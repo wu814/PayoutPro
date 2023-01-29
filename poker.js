@@ -64,12 +64,12 @@ class MaxHeap {
       console.log(this.heap.map(i => i[0] + ":" + i[1]).join(" ")); 
     }
   
-    lossStr() {
+    print_loss() {
       let stri = this.heap.map(i => i[0] + " owes $" + i[1] + ".").join("<br>");
       return stri;
     }
   
-    gainStr() {
+    print_gain() {
       let stri = this.heap.map(i => i[0] + " earns $" + i[1] + ".").join("<br>");
       return stri;
     }
@@ -105,7 +105,13 @@ function rearrange(greater, less) {
     
 
     for (let i = 0; i < 8; i++) {
-   
+    //   try {
+    //     chips = parseFloat(chipStr);
+    //     buyIn = parseFloat(buyStr);
+    //   } catch (e) {
+    //     console.log(`Invalid input: ${e.message}`);
+    //     process.exit(1);
+    //   }
       let net = parseFloat(chipsArray[i]) - parseFloat(buyInArray[i]);
       if (nameArray[i] === "none") {
         net = 0;
@@ -118,7 +124,7 @@ function rearrange(greater, less) {
       }
     }
 
-    let summary = loss.lossStr() + "<br>" + "<br>" + gain.gainStr();
+    let summary = loss.print_loss() + "<br>" + "<br>" + gain.print_gain();
     //console.log(summary);
     document.getElementById("sum").innerHTML = summary;
 
