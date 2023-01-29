@@ -15,9 +15,14 @@ html{
     display: flex;
 }
 h1{
-    margin: 15px 0px 20px 10px;
+    padding: 12px;
+    width: 490px;
+    margin: 10px 10px 20px 10px;
     font-size: 60px;
     color:white;
+    background-color: aqua;
+    background-color: rgba(0, 0, 0, .69);
+    border-radius: 20px;
 }
 hr{
     margin-bottom: 30px;
@@ -35,26 +40,32 @@ span{
     padding: 10px;
     margin: 2px 25px;
     border-radius: 7px;
-    border: 2px solid rgb(111, 200, 225);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: aqua;
+    background-color: rgba(0, 0, 0, .6);
 }
 ::placeholder{
-    color: rgb(122, 117, 117);
+    color: rgb(139, 134, 134);
 }
 .worth{
     padding: 10px;
     margin: 2px 25px;
     border-radius: 7px;
     border: 2px solid #f9004d;
+    background-color: aqua;
+    background-color: rgba(0, 0, 0, .6);
 }
 .total{
     padding: 10px;
     margin: 2px 25px;
     border-radius: 7px;
     border: 2px solid #f9004d;
+    background-color: aqua;
+    background-color: rgba(0, 0, 0, .6);
 }
 .btn{
     margin-left: 50px;
-    background-color: #f9004d;
+    background-color: #f90029;
     color: white;
     border: 2px solid transparent;
     font-weight: bold;
@@ -74,31 +85,35 @@ span{
     text-align: center;
     height: 500px;
     width: 300px;
-    background-color: rgb(254, 254, 254);
+    background-color: aqua;
+    background-color: rgba(0, 0, 0, .69);
     margin-top: 30px;
     margin-left: 100px;
     border-radius: 50px;
-    border: 5px solid rgb(111, 200, 225);
+    border: 5px solid rgb(20, 20, 202);
 }
 .summary h3{
     padding: 20px 0px;
     font-size: 30px;
+    color: white;
 }
 .result{
     display: inline-block;
     text-align: center;
     height: 500px;
     width: 300px;
-    background-color: rgb(254, 254, 254);
+    background-color: aqua;
+    background-color: rgba(0, 0, 0, .69);
     margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 50px;
-    border: 5px solid rgb(111, 200, 225);
+    border: 5px solid rgb(20, 20, 202);
 }
 .result h3{
     padding: 20px 0px;
     font-size: 30px;
+    color: white;
 }
 .result div{
     font-size: 20px;
