@@ -88,12 +88,7 @@ function rearrange(greater, less) {
     const loss = new MaxHeap();
     const gain = new MaxHeap();
   
-    // // let chipStr;
-    // // let buyStr;
-    // console.log("For each player, enter name, amount of chips, and total bought in seperated by space: ");
-    // const nameInput = document.getElementById(`nameInput${i}`);
-    // const chipInput = document.getElementById(`chipInput${i}`);
-    // const buyInput = document.getElementById(`buyInput${i}`);
+    
     
     const nameArray = ["p1name", "p2name", "p3name", "p4name", "p5name", "p6name", "p7name", "p8name", ];
     const chipsArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
@@ -110,13 +105,7 @@ function rearrange(greater, less) {
     
 
     for (let i = 0; i < 8; i++) {
-    //   try {
-    //     chips = parseFloat(chipStr);
-    //     buyIn = parseFloat(buyStr);
-    //   } catch (e) {
-    //     console.log(`Invalid input: ${e.message}`);
-    //     process.exit(1);
-    //   }
+   
       let net = parseFloat(chipsArray[i]) - parseFloat(buyInArray[i]);
       if (nameArray[i] === "none") {
         net = 0;
