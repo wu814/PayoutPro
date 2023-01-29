@@ -34,12 +34,14 @@ hr{
     font-size: 20px;
     color: white;
 }
-
+.header ul li:first-child{
+    margin-right: 50px;
+}
 .header ul li:nth-child(2){
-    margin-left: 135px;
+    margin-left: 105px;
 }
 .header ul li:last-child{
-    margin-left: 30px;
+    margin-left: 65px;
 }
 span{
     color: rgb(111, 200, 225);

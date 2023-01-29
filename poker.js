@@ -87,12 +87,10 @@ function rearrange(greater, less) {
   function main() {
     const loss = new MaxHeap();
     const gain = new MaxHeap();
-  
-    
     
     const nameArray = ["p1name", "p2name", "p3name", "p4name", "p5name", "p6name", "p7name", "p8name", ];
-    const chipsArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
-    const buyInArray = ["p1worth", "p2worth", "p3worth", "p4worth", "p5worth", "p6worth", "p7worth", "p8worth"];
+    const buyInArray = ["p1total", "p2total", "p3total", "p4total", "p5total", "p6total", "p7total", "p8total"];
+    const chipsArray = ["p1worth", "p2worth", "p3worth", "p4worth", "p5worth", "p6worth", "p7worth", "p8worth"];
     
     
 
