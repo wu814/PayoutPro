@@ -2,8 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Times New Roman", serif;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 html{
     background: url(img/background.jpeg) no-repeat center center fixed; 
@@ -16,61 +15,79 @@ html{
     display: flex;
 }
 h1{
+    margin: 15px 0px 15px 10px;
     font-size: 60px;
-    padding-bottom: 20px;
     color:white;
 }
+hr{
+    margin-bottom: 30px;
+    height: 2px;
+}
 .info {
-    font-size: 30px;
+    margin-left: 5px;
+    font-size: 20px;
     color: white;
 }
 span{
     color: rgb(111, 200, 225);
 }
 .name{
-    margin: 5px 25px;
-    border-radius: 15px;
-    border: 2px solid #f9004d;
-}
-.buyin{
-    margin: 5px 25px;
-    border-radius: 15px;
-    border: 2px solid #f9004d;
+    margin: 2px 25px;
+    border-radius: 7px;
+    border: 2px solid rgb(111, 200, 225);
 }
 ::placeholder{
-    color: #f9004d;
+    color: rgb(122, 117, 117);
 }
-
-
 .worth{
-    margin: 5px 25px;
-    border-radius: 20px;
+    margin: 2px 25px;
+    border-radius: 7px;
     border: 2px solid #f9004d;
 }
-
+.total{
+    margin: 2px 25px;
+    border-radius: 7px;
+    border: 2px solid #f9004d;
+}
 .btn{
     margin-left: 50px;
-    background-color: #0e0d0d;
+    background-color: #f9004d;
     color: white;
     border: 2px solid transparent;
     font-weight: bold;
+    font-size: 15px;
     padding: 10px 25px;
-    border-radius: 30px;
+    border-radius: 20px;
     transition: .4s; 
 }
-
 .btn:hover{
     background-color: transparent;
     transform: scale(1.2);
-    border: 2px solid #edeaeb;
+    border: 2px solid #f9004d;
     cursor: pointer;
 }
 .result{
-    margin-left: 200px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 600px;
+    background-color: rgb(254, 254, 254);
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 50px;
+    border: 5px solid rgb(111, 200, 225);
+}
+.result h3{
+    padding-top: 10px;
+    font-size: 30px;
+}
+.result div{
+    font-size: 20px;
 }
 footer{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+}
+footer p{
+    margin-top: 80px;
 }
